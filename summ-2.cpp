@@ -8,6 +8,8 @@ using namespace std;
 template <typename Iterator, typename T>
 auto find_two_elements_with_sum(Iterator first, Iterator last, T c)->std::pair<bool, std::pair<Iterator, Iterator>>
 {
+	//first - Unidirectional
+	//last - Bidirectional
 	std::pair<bool, std::pair<Iterator, Iterator>> p;
 	p.first = false;
 	p.second.first = nullptr;
