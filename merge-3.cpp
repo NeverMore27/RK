@@ -42,14 +42,3 @@ auto merge(Iterator1 first1, Iterator1 last1, Iterator1 first2, Iterator1 last2,
 	return output;
 }
 
-int main()
-{
-	int a[] = { 0, 2, 8, 17 };
-	int b[] = { 1, 4, 7, 18 };
-	int c[10];
-	merge(a, a + 4, b, b + 4, c);
-	for (int i = 0; i < 8; i++) std::cout << c[i] << endl;
-	int ci;
-	cin >> ci;
-	return 0;
-}
